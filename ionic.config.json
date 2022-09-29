@@ -1,0 +1,7 @@
+{
+  "name": "app_ionic_peliculas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
