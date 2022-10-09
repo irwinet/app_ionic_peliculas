@@ -10,6 +10,10 @@ export class DataLocalService {
   peliculas: PeliculaDetalle[] = [];
   private _storage: Storage | null = null;
 
+  get getLocalPeliculas(){
+    return [...this.peliculas];
+  }
+
   constructor(private storage: Storage, private toastCtrl: ToastController) {
     this.init();
   }
