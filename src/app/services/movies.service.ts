@@ -52,4 +52,8 @@ export class MoviesService {
   getActoresPelicula(id: number){
     return this.ejecutarQuery<RespuestaCredits>(`/movie/${id}/credits?a=1`);
   }
+
+  buscarPeliculas(query: string){
+    return this.ejecutarQuery<RespuestaMDB>(`/search/movie?query=${query}`);
+  }
 }
